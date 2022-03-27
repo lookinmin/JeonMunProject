@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".HW2_7"
+    android:id="@+id/HW2_7"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="텍스트 입력"
+        android:gravity="center"
+        android:id="@+id/txt"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글자 나타내기"
+        android:backgroundTint="#655656"
+        android:id="@+id/btnTxt">
+    </Button>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#655656"
+        android:text="홈페이지 열기"
+        android:id="@+id/btnUrl">
+    </Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <RadioButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Karina"
+            android:id="@+id/Karina">
+        </RadioButton>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="40dp"/>
+        <RadioButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Winter"
+            android:id="@+id/Winter">
+        </RadioButton>
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/karina"
+        android:id="@+id/img">
+    </ImageView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
