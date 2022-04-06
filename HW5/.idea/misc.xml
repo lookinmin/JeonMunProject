@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/drawable/btn_border.xml" value="0.2055" />
+        <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/drawable/get_btn.xml" value="0.2055" />
         <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_hw41.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_hw52.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_hw54.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_mission.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_mission2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_mission4.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ancx1/AndroidStudioProjects/JeonMunProject/HW5/app/src/main/res/layout/activity_mission5.xml" value="0.33" />
       </map>
     </option>
   </component>
