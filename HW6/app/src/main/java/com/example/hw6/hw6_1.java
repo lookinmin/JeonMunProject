@@ -1,8 +1,11 @@
 package com.example.hw6;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -12,7 +15,9 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 public class hw6_1 extends AppCompatActivity {
-
+    int selectYear;
+    int selectMonth;
+    int selectDay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +37,60 @@ public class hw6_1 extends AppCompatActivity {
         TextView tvHour = findViewById(R.id.tvHour);
         TextView tvMinute = findViewById(R.id.tvMinute);
 
+
+
         tPicker.setVisibility(View.INVISIBLE);
         calView.setVisibility(View.INVISIBLE);
+
+        rdoCal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tPicker.setVisibility(View.INVISIBLE);
+                calView.setVisibility(View.VISIBLE);
+            }
+        });
+
+        rdoTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tPicker.setVisibility(View.VISIBLE);
+                calView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                chrono.setBase(SystemClock.elapsedRealtime());
+                chrono.start();
+                chrono.setTextColor(Color.RED);
+            }
+        });
+
+        btnEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                chrono.stop();
+                chrono.setTextColor(Color.BLUE);
+
+                tvYear.setText(Integer.toString(selectYear));
+                tvMonth.setText(Integer.toString(selectMonth));
+                tvDay.setText(Integer.toString(selectDay));
+
+                tvHour.setText(Integer.toString(tPicker.getCurrentHour()));
+                tvMinute.setText(Integer.toString(tPicker.getCurrentMinute()));
+            }
+        });
+
+
+        calView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
+                selectYear = i;
+                selectMonth = i1+1;
+                selectDay = i2;
+            }
+        });
 
     }
 }
