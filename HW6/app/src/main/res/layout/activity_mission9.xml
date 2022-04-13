@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".mission9">
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainFragment"
+        android:name="com.example.hw6.CustomerFragment"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
