@@ -1,4 +1,4 @@
-package com.example.hw10;
+package com.example.homework10;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,11 +10,11 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class do10_3 extends AppCompatActivity {
+public class Task10_3 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_do10_3);
+        setContentView(R.layout.activity_task103);
         setTitle("메인 엑티비티");
 
         final EditText edtNum1 = findViewById(R.id.edtNum1);
